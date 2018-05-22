@@ -546,7 +546,7 @@
     -->
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
 
-     <!--Wether to enable Button Brightness -->
+    <!--Wether to enable Button Brightness -->
     <bool name="config_button_brightness_support">true</bool>
     <integer name="config_button_brightness_default">128</integer>
 </resources>
