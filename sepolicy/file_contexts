@@ -48,5 +48,3 @@ sys/kernel/sound_control/headphone_gain                     u:object_r:sysfs_hea
 /sys/class/timed_output/vibrator/vmax_mv             u:object_r:sysfs_vibrator:s0
 /sys/class/timed_output/vibrator/vtg_level           u:object_r:sysfs_vibrator:s0
 /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator(/.*)?              u:object_r:sysfs_vibrator:s0
-
-
