@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library \
     libantradio
+    
+# Camera 2
+PRODUCT_PACKAGES += \
+    Camera2 \
 
 # Device-specific Settings
 PRODUCT_PACKAGES += \
