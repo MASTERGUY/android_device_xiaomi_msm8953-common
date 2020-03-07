@@ -73,9 +73,15 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
+# Common qti  blobs
+include vendor/qcom/common/av/qti-av.mk
+include vendor/qcom/common/bt/qti-bt.mk
+include vendor/qcom/common/perf/qti-perf.mk
+
 # Device-specific Settings
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XiaomiParts \
+    ParanoidDoze
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -311,9 +317,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
     telephony-ext
 
 #RRO
