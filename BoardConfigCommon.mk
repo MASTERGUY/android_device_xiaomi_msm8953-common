@@ -203,7 +203,7 @@ endif
 
 # SELinux
 TARGET_EXCLUDE_QCOM_SEPOLICY := true
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
+include device/qcom/sepolicy/legacy-um/legacy-um.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # Wi-Fi
