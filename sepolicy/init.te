@@ -1,1 +1,4 @@
 allow init proc_boot_reason:file r_file_perms;
+allow init default_android_hwservice:hwservice_manager add;
+allow init hidl_base_hwservice:hwservice_manager add;
+allow init hwservicemanager:binder transfer;
