@@ -1,7 +1,8 @@
 allow init proc_boot_reason:file r_file_perms;
 allow init hidl_base_hwservice:hwservice_manager add;
 allow init hwservicemanager:binder transfer;
-
 allow init vendor_data_file:file lock;
 allow init hal_audio_default:binder call;
 allow init platform_app:binder call;
+# Allow init to chown/chmod on pseudo files in /sys
+allow init sysfs_type:file { setattr };
