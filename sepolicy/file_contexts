@@ -36,3 +36,8 @@
 /sys/bus/platform/drivers/kcal_ctrl(/.*)?                    u:object_r:kcal_dev:s0
 /sys/class/graphics/fb0/measured_fps                         u:object_r:sysfs_fpsinfo:s0
 /sys/kernel/fast_charge/force_fast_charge                    u:object_r:sysfs_fastcharge:s0
+sys/kernel/sound_control/headphone_gain                     u:object_r:sysfs_headgain:s0
+/sys/kernel/sound_control/mic_gain                           u:object_r:sysfs_micgain:s0
+/sys/module/mdss_fb/parameters/backlight_dimmer              u:object_r:sysfs_backlightdim:s0
+/sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness          u:object_r:sysfs_torch:s0
+/sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness           u:object_r:sysfs_torch:s0
