@@ -2,8 +2,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Head Title -->
-    <string name="xiaomiparts_title">Xiaomi Parts</string>
-    <string name="xiaomiparts_settings_summary">Device Specific Customizations</string>
+    <string name="xiaomi_parts_title">Xiaomi Parts</string>
+    <string name="xiaomi_parts_settings_summary">Device Specific Customizations</string>
 
     <!-- Category Title -->
     <string name="audio_category">Audio</string>
@@ -31,8 +31,10 @@
     <string name="backlight_summary">Dim the display to the maximum value</string>
 
     <!-- Vibrator -->
-    <string name="vibration_strength_title">Strength</string>
-
+    <string name="vibration_title">Vibration feedback</string>
+    <string name="vibration_strength_title">System Strength</string>
+    <string name="vibration_call_strength_title">Call Strength</string>
+    <string name="vibration_notif_strength_title">Notification Strength</string>
     <!-- kcal -->
     <string name="device_kcal_title">Display Calibration</string>
     <string name="device_kcal_summary">Display color calibration using KCAL</string>
@@ -42,7 +44,6 @@
 
     <string name="kcal_enabled">On</string>
     <string name="kcal_disabled">Off</string>
-    <string name="set_on_boot">Set On Boot</string>
     <string name="color_red">Red</string>
     <string name="color_green">Green</string>
     <string name="color_blue">Blue</string>
@@ -188,5 +189,70 @@
 
     <!-- QS tile title -->
     <string name="dirac_qs_tile_title">Dirac sound</string>
+
+    <!-- Set On Boot -->
+    <string name="set_on_boot">Set On Boot</string>
+    <string name="set_on_boot_summary">Restore your modifications on each reboot</string>
+    <!-- Head Title -->
+    
+
+    <!-- Category Title -->
+    
+    
+   
+    <string name="vibration_category">Vibration</string>
+
+    <!-- Audio amplification -->
+    
+    
+    <string name="earpiece_gain">Earpiece gain (Calls)</string>
+    <string name="speaker_gain">Speaker gain</string>
+
+    <!-- Torch -->
+    <string name="torch_yellow_brightness_title">Yellow flashlight</string>
+
+    <!-- Backlight Dimmer -->
+   
+  
+
+    <!-- FPS Info -->
+    
+   
+    <!-- Vibrator -->
+    <string name="vibration_override_title">Override System Vibration</string>
+    <string name="vibration_system_title">System Vibration Strength</string>
+    <string name="vibration_notification_title">Notification Vibration Strength</string>
+    <string name="vibration_call_title">Call Vibration Strength</string>
+
+    <!-- kcal -->
+   
+    
+    
+   
+    
+
+    
+   
+    
+    
+   
+   
+
+    <!-- Log Tile -->
+    <string name="quick_settings_log_tile_label">LogTile</string>
+    <string name="quick_settings_log_tile_dialog_title">Options</string>
+    <string name="cannot_get_su">Action failed because of missing superuser access</string>
+
+    <!-- Selinux Switch -->
+    <string name="selinux_category">SELinux</string>
+    <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk.</string>
+    <string name="selinux_mode_title">SELinux mode</string>
+    <string name="selinux_permissive_summary">Permissive</string>
+    <string name="selinux_enforcing_summary">Enforcing</string>
+    <string name="selinux_persistence_title">Persist across reboots</string>
+    <string name="selinux_persistence_summary">Restore the above set sepolicy mode on each boot</string>
+    <string name="selinux_permissive_toast_title">Selinux set to permissive!</string>
+    <string name="selinux_enforcing_toast_title">Selinux set to enforcing!</string>
+    <string name="selinux_unrooted_summary">Couldn\'t detect root. You must have root to use these switches</string>
 
 </resources>

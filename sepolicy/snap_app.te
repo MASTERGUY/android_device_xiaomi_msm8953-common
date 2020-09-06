@@ -1,2 +1,0 @@
-allow snap_app theme_prop:file read;
-allow snap_app persist_camera_prop:file { read };
