@@ -12,9 +12,9 @@ import java.util.List;
 
 public class Utils {
 
-    public static final String TAG = "CorvusActions";
+    public static final String TAG = "xiaomiActions";
 
-    public static final String PREFERENCES = "CorvusPreferences";
+    public static final String PREFERENCES = "xiaomiPreferences";
     public static final String AMBIENT_GESTURE_HAPTIC_FEEDBACK =
             "AMBIENT_GESTURE_HAPTIC_FEEDBACK";
 
