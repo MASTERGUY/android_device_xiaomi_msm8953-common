@@ -112,16 +112,6 @@ private static final String AMBIENT_DISPLAY = "ambient_display_gestures";
         torch_yellow.setEnabled(FileUtils.fileWritable(TORCH_YELLOW_BRIGHTNESS_PATH));
         torch_yellow.setOnPreferenceChangeListener(this);
 
-        mSpeakerGain = (CustomSeekBarPreference) findPreference(PREF_SPEAKER_GAIN);
-        mSpeakerGain.setOnPreferenceChangeListener(this);
-
-        
-
-        SecureSettingSwitchPreference dim = (SecureSettingSwitchPreference) findPreference(PREF_BACKLIGHT_DIMMER);
-        dim.setEnabled(Dimmer.isSupported());
-        dim.setChecked(Dimmer.isCurrentlyEnabled(this.getContext()));
-        dim.setOnPreferenceChangeListener(new Dimmer(getContext()));
-
         SwitchPreference fpsInfo = (SwitchPreference) findPreference(PREF_KEY_FPS_INFO);
         fpsInfo.setChecked(prefs.getBoolean(PREF_KEY_FPS_INFO, false));
         fpsInfo.setOnPreferenceChangeListener(this);
