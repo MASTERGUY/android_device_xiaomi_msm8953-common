@@ -43,7 +43,7 @@
 	    android:exported="false"
             android:icon="@drawable/ic_xiaomiparts"
             android:label="@string/xiaomi_parts_title"
-	     android:launchMode="singleTask">
+	    android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />

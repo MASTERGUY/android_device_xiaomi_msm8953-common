@@ -4,14 +4,6 @@
 
     <PreferenceCategory android:title="@string/audio_category">
 
-        <com.xiaomi.parts.preferences.CustomSeekBarPreference 
-            android:defaultValue="0"
-            android:key="speaker_gain" 
-            android:max="20"
-            app:min="-10" 
-            android:icon="@drawable/ic_speaker"
-            android:title="@string/speaker_gain" />
-
         <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
             android:defaultValue="false"
             android:key="dirac_enabled"
@@ -41,11 +33,6 @@
     </PreferenceCategory>
 	
     <PreferenceCategory android:title="@string/display_category">
-        <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
-            android:key="backlight_dimmer"
-            android:icon="@drawable/ic_backlight"
-            android:title="@string/backlight_dimmer"
-            android:summary="@string/backlight_summary" />
 
         <SwitchPreference
             android:key="fps_info"
@@ -150,7 +137,7 @@
             android:title="@string/selinux_mode_title"
             android:summaryOn="@string/selinux_enforcing_summary"
             android:summaryOff="@string/selinux_permissive_summary"
-            android:selectable="false" />
+            android:selectable="true" />
 
         <SwitchPreference
             android:key="selinux_persistence"
@@ -161,8 +148,5 @@
             android:selectable="true"/>
 
     </PreferenceCategory>
-
-  
-
 
 </PreferenceScreen>
