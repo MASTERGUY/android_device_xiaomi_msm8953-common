@@ -86,27 +86,12 @@ private static final String AMBIENT_DISPLAY = "ambient_display_gestures";
         mContext = this.getContext();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
 
-        SecureSettingSwitchPreference vib = (SecureSettingSwitchPreference) findPreference(PREF_VIBRATION_OVERRIDE);
-        vib.setEnabled(Vibration.isSupported());
-        vib.setChecked(Vibration.isCurrentlyEnabled(this.getContext()));
-        vib.setOnPreferenceChangeListener(new Vibration(getContext()));
         Preference ambientDisplay = findPreference(AMBIENT_DISPLAY);
         ambientDisplay.setOnPreferenceClickListener(preference -> {
             Intent intent = new Intent(getContext(), AmbientGesturePreferenceActivity.class);
             startActivity(intent);
             return true;
         });
-        VibrationSeekBarPreference vibrationSystemStrength = (VibrationSeekBarPreference) findPreference(PREF_VIBRATION_SYSTEM_STRENGTH);
-        vibrationSystemStrength.setEnabled(FileUtils.fileWritable(VIBRATION_SYSTEM_PATH));
-        vibrationSystemStrength.setOnPreferenceChangeListener(this);
-
-        VibrationSeekBarPreference vibrationNotificationStrength = (VibrationSeekBarPreference) findPreference(PREF_VIBRATION_NOTIFICATION_STRENGTH);
-        vibrationNotificationStrength.setEnabled(FileUtils.fileWritable(VIBRATION_NOTIFICATION_PATH));
-        vibrationNotificationStrength.setOnPreferenceChangeListener(this);
-
-        VibrationSeekBarPreference vibrationCallStrength = (VibrationSeekBarPreference) findPreference(PREF_VIBRATION_CALL_STRENGTH);
-        vibrationCallStrength.setEnabled(FileUtils.fileWritable(VIBRATION_CALL_PATH));
-        vibrationCallStrength.setOnPreferenceChangeListener(this);
 
         CustomSeekBarPreference torch_yellow = (CustomSeekBarPreference) findPreference(PERF_YELLOW_TORCH_BRIGHTNESS);
         torch_yellow.setEnabled(FileUtils.fileWritable(TORCH_YELLOW_BRIGHTNESS_PATH));
