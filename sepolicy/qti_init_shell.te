@@ -11,14 +11,6 @@ allow qti_init_shell system_data_file:dir { setattr write };
 # XiaomiParts
 allow qti_init_shell kcal_dev:dir search;
 allow qti_init_shell kcal_dev:file rw_file_perms;
-allow qti_init_shell sysfs_headgain:dir search;
-allow qti_init_shell sysfs_headgain:file rw_file_perms;
-allow qti_init_shell sysfs_micgain:dir search;
-allow qti_init_shell sysfs_micgain:file rw_file_perms;
-allow qti_init_shell sysfs_backlightdim:dir search;
-allow qti_init_shell sysfs_backlightdim:file rw_file_perms;
-allow qti_init_shell sysfs_vibrator:dir search;
-allow qti_init_shell sysfs_vibrator:file rw_file_perms;
 allow qti_init_shell sysfs_fpsinfo:dir search;
 allow qti_init_shell sysfs_fpsinfo:file rw_file_perms;
 allow qti_init_shell sysfs_torch:dir search;
